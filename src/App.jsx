@@ -1,5 +1,9 @@
+import Header from "./components/header";
+
 const App = () => {
-  return <h1>Ayaan Merchant</h1>
+  return (
+    <Header/>
+  )
 }
 
-export default App;
+export default App
