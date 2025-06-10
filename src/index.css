@@ -18,12 +18,13 @@ body {
 
 /* navbar */
 .navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter]
+  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 opacity-0 isolate invisible transition-all duration-200;
 }
 
 .navbar.active {
-  @apply opacity-100 scale-100 blur-xs visible
+  @apply bg-red-500 opacity-100 visible;
 }
+
 
 .nav-link {
   @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors 

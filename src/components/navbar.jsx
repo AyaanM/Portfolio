@@ -37,20 +37,21 @@ const navbar = ({navOpen}) => {
     ];
 
     return (
-        <nav className={'navbar' + (navOpen ? 'active': '')}> {
+        <nav className={'navbar ' + (navOpen ? 'active' : '')}> 
+        {
             navItems.map(({label, link, className, ref}, key) => (
-                <a 
-                href={link} 
-                key={key} 
-                ref={ref}
-                className={className}
-                onClick={null}
-                >
-                    {label}
-                </a>
-            ))
-            }
-            <div className="active-box" ref={activeBox}></div>
+            <a 
+            href={link} 
+            key={key} 
+            ref={ref}
+            className={className}
+            onClick={null}
+            >
+                {label}
+            </a>
+        ))
+        }
+        <div className="active-box" ref={activeBox}></div>
         </nav>
     )
 }
