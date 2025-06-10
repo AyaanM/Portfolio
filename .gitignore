@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Tailwind config
+## You need it for the intellisense to work but it's not required in 4.0
+tailwind.config.js
