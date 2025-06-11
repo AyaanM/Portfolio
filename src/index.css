@@ -15,6 +15,10 @@ body {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+.menu-rotate {
+  @apply active:rotate-90 duration-500
+}
+
 /* COMPONENTS */
 
 /* menu btn */

@@ -20,7 +20,7 @@ const Header = () => {
 
           <div className="relative md:justify-self-center">
             <button className="menu-btn" onClick={() => setNavOpen((prev) => !prev)}>
-              <span className="material-symbols-outlined">{navOpen ? 'close': 'menu'}</span>
+              <span className="material-symbols-outlined menu-rotate">{navOpen ? 'close': 'menu'}</span>
             </button>
 
             <Navbar navOpen={navOpen}/>
