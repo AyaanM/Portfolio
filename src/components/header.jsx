@@ -19,16 +19,12 @@ const Header = () => {
           </h1>
 
           <div className="relative md:justify-self-center">
-            <button className="menu-btn md:hidden" onClick={() => setNavOpen((prev) => !prev)}>
+            <button className="menu-btn" onClick={() => setNavOpen((prev) => !prev)}>
               <span className="material-symbols-outlined">{navOpen ? 'close': 'menu'}</span>
             </button>
 
             <Navbar navOpen={navOpen}/>
           </div>
-
-          <a href="#contact" className="btn btn-secondary max-md:hidden md:justify-self-end">
-            Contact Me
-          </a>
         </div>
       </header>
     )
