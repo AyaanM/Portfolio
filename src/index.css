@@ -10,6 +10,10 @@ body {
   @apply bg-gray-800 h-[200vh]
 }
 
+.ring-cyan {
+  @apply ring-1 ring-cyan-400
+}
+
 /* TYPOGRAPHY */
 .headline-1 {
   @apply text-5xl leading-tight font-semibold lg:text-[55xp] lg:leading-[1.15];
@@ -25,10 +29,6 @@ body {
   @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
 
-button {
-  @apply ring-1 p-3 rounded
-}
-
 /* COMPONENTS */
 
 /* HEADER */
@@ -42,7 +42,7 @@ button {
 
 /* navbar */
 .navbar {
-  @apply absolute w-max mt-2 right-0 min-w-40 p-2 bg-red-900 rounded-2xl opacity-0 duration-700 md:fixed md:top-5 md:left-1/2 md:-translate-x-1/2 md:z-50 md:flex md:justify-center md:mt-0 md:opacity-100 md:visible md:scale-100;
+  @apply absolute w-max mt-2 right-0 min-w-40 p-2 ring-1 ring-cyan-400 rounded-2xl opacity-0 duration-700 md:fixed md:top-5 md:left-1/2 md:-translate-x-1/2 md:z-50 md:flex md:justify-center md:mt-0 md:opacity-100 md:visible md:scale-100;
 }
 
 .navbar.active {
@@ -59,13 +59,4 @@ button {
 
 .navbar .active-box {
   @apply absolute top-2 left-2 right-2 h-9 bg-zinc-50 rounded-lg -z-10 transition-[top,left] duration-700
-}
-
-/* button */
-.btn {
-  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color]
-}
-
-.btn-secondary {
-  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/50
 }

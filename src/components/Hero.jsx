@@ -8,14 +8,17 @@ const Hero = () => {
 
             <div className="text-center tracking-wide">
                 <p className='text-md text-cyan-400'>Hello I'm</p>
-                <h1 className="headline-1 max-w-[15ch] sm:max-w-[20ch] mt-5 mb-5">Ayaan Merchant</h1>
-                <p className="">Web Developer</p>
-                <button type="button" className="mt-10">
-                    <p>Lets Grab a Virtual Coffee
-                    {/* <span className="material-symbols-outlined">  local_cafe</span> */}
-                    </p>
-                </button>
+                <h1 className="headline-1 max-w-[15ch] sm:max-w-[20ch] my-3">Ayaan Merchant</h1>
+                <p className="font-light">Web Developer</p>
 
+                <a href="#coffee" className="inline-block mt-5 px-6 py-3 ring-cyan text-cyan-400 rounded">
+                    Let's Grab a Virtual Coffee</a>
+
+                <div className="container grid grid-cols-3">
+                    <img src="/Portfolio/github_logo_white.png" width={40} height={40} alt="GitHub" />
+                    <img src="/Portfolio/link_logo_white.png" width={40} height={40} alt="LinkedIn"/>
+                    <span className='material-symbols-outlined' width={40} height={40}>mail</span>
+                </div>
             </div>
 
             <figure className="hidden md:block w-full max-w-[480px] ml-auto bg-gradient-to-t from-cyan-400 via-45% via-cyan-700 to-70% rounded-[30px] overflow-hidden">
