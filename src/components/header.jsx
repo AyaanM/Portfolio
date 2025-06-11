@@ -10,10 +10,10 @@ const Header = () => {
 
     return (
       <header className="w-full h-20 flex z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
-        <div className="w-full px-4 flex md:justify-center justify-between items-center">
+        <div className="w-full px-4 flex justify-between items-center">
 
-          <h1>
-            <a href="/" className="logo md:hidden justify-start">
+          <h1 id="home" className="logo">
+            <a href="/">
             <img src="/Portfolio/logo.png" width={80} height={90} alt="AM" />
             </a>
           </h1>

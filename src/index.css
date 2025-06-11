@@ -3,10 +3,16 @@
 /* BASE */
 html {
   scroll-behavior: smooth;
+  color: white;
 }
 
 body {
-  @apply bg-gray-200 h-[200vh]
+  @apply bg-gray-800 h-[200vh]
+}
+
+/* TYPOGRAPHY */
+.headline-1 {
+  @apply text-5xl leading-tight font-semibold lg:text-[55xp] lg:leading-[1.15];
 }
 
 /* UTILITIES */
@@ -15,11 +21,23 @@ body {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+button {
+  @apply ring-1 p-3 rounded
+}
+
 /* COMPONENTS */
 
-/* menu btn */
+/* HEADER */
 .menu-btn {
   @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl backdrop-blur-2xl hover:bg-zinc-50/25 transition-all active:rotate-90 md:invisible
+}
+
+.logo:hover{
+  @apply rotate-360 duration-600
 }
 
 /* navbar */
@@ -27,15 +45,12 @@ body {
   @apply absolute w-max mt-2 right-0 min-w-40 p-2 bg-red-900 rounded-2xl opacity-0 duration-700 md:fixed md:top-5 md:left-1/2 md:-translate-x-1/2 md:z-50 md:flex md:justify-center md:mt-0 md:opacity-100 md:visible md:scale-100;
 }
 
-
-
-
 .navbar.active {
   @apply opacity-100;
 }
 
 .navlink {
-  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 md:hover:rotate-45 transition-colors
+  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
 }
 
 .navlink.active {
