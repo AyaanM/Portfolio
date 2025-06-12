@@ -21,7 +21,7 @@ body {
 
 /* UTILITIES */
 .material-symbols-outlined {
-  @apply w-[len] h-[len] overflow-hidden;
+  @apply overflow-hidden;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 

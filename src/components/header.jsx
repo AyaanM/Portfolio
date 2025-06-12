@@ -13,7 +13,7 @@ const Header = () => {
         <div className="w-full px-4 flex justify-between items-center">
 
           <h1 id="home" className="logo">
-            <a href="/">
+            <a href="/Portfolio">
             <img src="/Portfolio/logo.png" width={80} height={90} alt="AM" />
             </a>
           </h1>

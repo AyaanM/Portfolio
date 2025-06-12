@@ -7,17 +7,17 @@ const Hero = () => {
         <div className="container p-40 md:p-0 md:grid md:grid-cols-2 items-center">
 
             <div className="text-center tracking-wide">
-                <p className='text-md text-cyan-400'>Hello I'm</p>
-                <h1 className="headline-1 max-w-[15ch] sm:max-w-[20ch] my-3">Ayaan Merchant</h1>
-                <p className="font-light">Web Developer</p>
+                <p className='text-md text-cyan-400 my-3'>Hello I'm</p>
+                <h1 className="headline-1 my-3">Ayaan Merchant</h1>
+                <p className="font-light my-3">Web Developer</p>
 
-                <a href="#coffee" className="inline-block mt-5 px-6 py-3 ring-cyan text-cyan-400 rounded">
+                <a href="#coffee" className="inline-block px-6 py-3 my-3 ring-cyan text-cyan-400 rounded">
                     Let's Grab a Virtual Coffee</a>
 
-                <div className="container grid grid-cols-3">
-                    <img src="/Portfolio/github_logo_white.png" width={40} height={40} alt="GitHub" />
-                    <img src="/Portfolio/link_logo_white.png" width={40} height={40} alt="LinkedIn"/>
-                    <span className='material-symbols-outlined' width={40} height={40}>mail</span>
+                <div className="container flex gap-15 justify-center items-center my-3">
+                    <div className="w-8"><img src="/Portfolio/github_logo_white.png" alt="GitHub"/></div>
+                    <div className="w-8"><img src="/Portfolio/link_logo_white.png" className="w-full h-full object-contain" alt="LinkedIn"/></div>
+                    <div className="w-8 flex justify-center"><span className="material-symbols-outlined" style={{fontSize: '35px'}}>mail</span></div>
                 </div>
             </div>
 
