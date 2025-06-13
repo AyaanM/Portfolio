@@ -12,7 +12,10 @@ const Hero = () => {
                 <p className="font-light my-3">Web Developer</p>
 
                 <a href="#coffee" className="coffee-btn">
-                    Let's Grab a Virtual Coffee <span className="material-symbols-outlined animate-bounce">local_cafe</span></a>
+                    Let's Grab a Virtual Coffee
+                    <span className="material-symbols-outlined animate-bounce">local_cafe</span>
+                    
+                </a>
 
                 <div className="container flex gap-15 justify-center items-center my-3">
                     <div className="socials"><a href="https://github.com/AyaanM" target="_blank"><img src="/Portfolio/github_logo_white.png" alt="GitHub"/></a></div>
