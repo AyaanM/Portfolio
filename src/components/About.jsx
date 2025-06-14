@@ -3,10 +3,13 @@ import React from 'react'
 const About = () => {
   return (
     <section id="about" className="section">
-        <div className="about-pics"></div>
-        <div className="container grid">
+        <div className="container grid grid-cols-3">
 
-            <div className="about-pics"></div>
+            <div className="about-pics">
+              <img src="Portfolio/images/talk.jpg"></img>
+              <img src="Portfolio/images/budgies.png"></img>
+              <img src="Portfolio/images/golden_circle.png"></img>
+            </div>
 
             <div className="ring-2 ring-cyan-400 rounded-2xl p-7">
                 <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl">
@@ -23,7 +26,11 @@ const About = () => {
 
             </div>
 
-            <div className="about-pics"></div>
+            <div className="about-pics">
+              <img src="Portfolio/images/UMaryland-talk.png"></img>
+              <img src="Portfolio/images/trail-bike.jpg"></img>
+              <img src="Portfolio/images/washington.jpg"></img>
+            </div>
 
         </div>
     </section>
