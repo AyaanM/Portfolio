@@ -3,9 +3,13 @@ import React from 'react'
 const About = () => {
   return (
     <section id="about" className="section">
-        <div className="container">
-            <div className="ring-2 ring-cyan-400">
-                <p className="">
+        <div className="about-pics"></div>
+        <div className="container grid">
+
+            <div className="about-pics"></div>
+
+            <div className="ring-2 ring-cyan-400 rounded-2xl p-7">
+                <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl">
                 Hi, I’m Ayaan Merchant! A Computing Science and Business Student at University of Alberta. 
 
                 I’m an aspiring data scientist who has worked extensively in data analysis and business optimization. I also love public speaking and building, having co-founded The Business Club and Gaia, a JA Company, which won JA Canada Company of the Year!
@@ -17,12 +21,10 @@ const About = () => {
                 Continue scrolling to see some of the projects I've worked on, including websites and mockups. Give me a shout if you want to geek out about any of them.
                 </p>
 
-                <div className="">
-                    {
-                        
-                    }
-                </div>
             </div>
+
+            <div className="about-pics"></div>
+
         </div>
     </section>
   )
