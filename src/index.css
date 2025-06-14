@@ -79,3 +79,11 @@ body {
 }
 
 /* ABOUT */
+
+.about-pics {
+  @apply hidden md:block md:flex flex-col gap-6 md:w-1/4
+}
+
+.about-pics img:hover {
+  @apply scale-130 z-10
+}
