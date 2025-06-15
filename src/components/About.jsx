@@ -13,7 +13,7 @@ const About = () => {
           </div>
 
           <div className="ring-2 mb-4 ring-cyan-400 rounded-2xl p-6 text-zinc-300 text-base md:text-lg max-w-xl text-center bg-slate-800 shadow-lg">
-            <h1 className="headline-1 mb-4">Who am I?</h1>
+            <h1 className="headline-2">Who am I?</h1>
             <p className="mb-4">Hi, I’m Ayaan Merchant! A Computing Science and Business Student at University of Alberta.</p>
             <p className="mb-4">I’m an aspiring data scientist who has worked extensively in data analysis and business optimization. I also love public speaking and building, having co-founded The Business Club and Gaia, a JA Company, which won JA Canada Company of the Year!</p>
             <p className="mb-4">I’ve done much freelance work, including website development, UI/UX, and business and AI consulting.</p>

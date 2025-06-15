@@ -11,15 +11,6 @@ const project = [
         documentation: null
     },
     {
-        imgSrc: "/Portfolio/projects/mood_tracker.png",
-        title: "Mood Tracker",
-        techStack: ["Java", "Android Studio", "XML/UML", "Lucid Chart"],
-        description: "Android app to track, follow, and share moods increasing self-awareness",
-        github: "https://github.com/cmput301-w25/project-segfaultsquad",
-        mockup: "https://github.com/cmput301-w25/project-segfaultsquad/blob/main/docs/Storyboards/StoryBoard.png",
-        documentation: null
-    },
-    {
         imgSrc: "/Portfolio/projects/drone_network.png",
         title: "Drone Network Emergency Response",
         techStack: ["Python", "Pyomo", "Groubi Solver", "Google Collab"],
@@ -27,6 +18,15 @@ const project = [
         github: null,
         mockup: null,
         documentation: "https://drive.google.com/file/d/14nvo4eYjnLqkaKw0UYX8oCPMsVjnye7m/view?usp=sharing"
+    },
+    {
+        imgSrc: "/Portfolio/projects/mood_tracker.png",
+        title: "Mood Tracker",
+        techStack: ["Java", "Android Studio", "XML/UML", "Lucid Chart"],
+        description: "Android app to track, follow, and share moods increasing self-awareness",
+        github: "https://github.com/cmput301-w25/project-segfaultsquad",
+        mockup: "https://github.com/cmput301-w25/project-segfaultsquad/blob/main/docs/Storyboards/StoryBoard.png",
+        documentation: null
     },
     {
         imgSrc: "/Portfolio/projects/business_club.png",
@@ -61,7 +61,7 @@ const Projects = () => {
   return (
     <section id="projects" className="section">
         <div className="container">
-            <h2 className="headline-2 mb-8">My Coolest Projects</h2>
+            <h2 className="headline-2">My Coolest Projects</h2>
             <div className = "grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">{project.map(({imgSrc, title, techStack, description, github, mockup, documentation}, key) => (
                 
                 <ProjectCard
