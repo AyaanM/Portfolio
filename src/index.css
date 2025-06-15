@@ -15,6 +15,14 @@ body {
   @apply text-5xl leading-tight font-semibold lg:text-[55xp] lg:leading-[1.15];
 }
 
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+}
+
+.title-1 {
+  @apply text-[22px] font-normal
+}
+
 /* UTILITIES */
 .material-symbols-outlined {
   @apply overflow-hidden;

@@ -11,23 +11,23 @@ const ProjectCard = ({
 
   return (
 
-    <div className="relative p-4 rounded-2xl bg-zinc-800">
-        <figure className="">
-            <img src={imgSrc} alt={title} className="" />
+    <div className="relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors">
+
+        <figure className="img-box aspect-square rounded-lg mb-4">
+            <img src={imgSrc} alt={title} loading='lazy' className="" />
         </figure>
 
-        <div className="">
+        <div className="flex items-center justify-between gap-4">
 
             <div>
-                <h3>{title}</h3>
+                <h3 className="title-1 mb-3">{title}</h3>
 
-                <div className="">{techStack.map((label, key) => (
-                    <span key={key} className="">{label}</span>))}</div>
-
+                <div className="flex flex-wrap items-center gap-2">{techStack.map((label, key) => (
+                    <span key={key} className="h-8 text-sm text-zinc-400 bg-zinc-500/5 grid items-center px-3 rounded-lg">{label}</span>))}</div>
                 <p>{description}</p>
             </div>  
 
-            <div className="">
+            <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
                 <span className="material-symbols-outlined" aria-hidden="true">
                     arrow_outward
                 </span>
@@ -35,7 +35,7 @@ const ProjectCard = ({
 
         </div>
 
-        <a href={github} traget="_blank" className=""></a>
+        <a href={github} traget="_blank" className="absolute inset-0"></a>
         <a href={mockup} traget="_blank" className=""></a>
         <a href={documentation} traget="_blank" className=""></a>
 
