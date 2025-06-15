@@ -25,7 +25,7 @@ const Hero = () => {
             </div>
 
             <figure className="hidden md:block w-full max-w-[480px] ml-auto bg-gradient-to-t from-cyan-400 via-45% via-cyan-700 to-70% rounded-[30px] overflow-hidden">
-                <img src="/Portfolio/images/portrait.png" width={400} height={600} alt="Ayaan Merchant Portrait"/>
+                <img src="/Portfolio/self/portrait.png" width={400} height={600} alt="Ayaan Merchant Portrait"/>
             </figure>
         </div>
     </section>
