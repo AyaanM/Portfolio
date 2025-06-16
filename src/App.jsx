@@ -1,7 +1,3 @@
-
-
-import {ReactLenis} from "lenis/react"
-
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About"
@@ -12,7 +8,7 @@ import Contact from "./components/Contact";
 const App = () => {
 
   return (
-    <ReactLenis root>
+    <>
     <Header/>
     <main>
       <Hero/>
@@ -21,7 +17,7 @@ const App = () => {
       <Coffee/>
       <Contact/>
     </main>
-    </ReactLenis>
+    </>
   )
 }
 
