@@ -16,7 +16,7 @@ body {
 }
 
 .headline-2 {
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold mb-8
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold mb-8 text-center
 }
 
 .title-1 {
