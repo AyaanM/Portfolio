@@ -20,7 +20,7 @@ body {
 }
 
 .title-1 {
-  @apply text-[22px] font-normal
+  @apply text-lg font-semibold
 }
 
 /* UTILITIES */

@@ -1,3 +1,5 @@
+/*WHEN GETTING IMAGES MAKE SURE TO CROP THEM TO IMAGE SIZE AND NOT INCLUDE ANY EXTRA PADDDING*/
+
 import PropTypes from "prop-types"
 
 const ProjectCard = ({
@@ -13,18 +15,19 @@ const ProjectCard = ({
 
     <div className="relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors">
 
-        <figure className="img-box rounded-lg mb-5 bg-gray-200">
-            <img src={imgSrc} alt={title} loading='lazy' className="items-center text-center" />
+        <figure className="w-full h-56 bg-gray-200 flex items-center justify-center rounded-xl overflow-hidden mb-4">
+            <img src={imgSrc} alt={title} className="p-2 max-w-full max-h-full"/> 
         </figure>
+
 
         <div className="flex items-center justify-between gap-4">
 
             <div>
-                <h3 className="title-1 mb-3">{title}</h3>
+                <h3 className="title-1 mb-2">{title}</h3>
 
-                <div className="flex flex-wrap items-center gap-2">{techStack.map((label, key) => (
-                    <span key={key} className="h-8 text-sm text-zinc-400 bg-zinc-500/5 grid items-center px-3 rounded-lg">{label}</span>))}</div>
-                <p>{description}</p>
+                <div className="flex flex-wrap gap-2 mb-3">{techStack.map((label, key) => (
+                    <span key={key} className="bg-zinc-700 text-zinc-100 text-xs px-2 py-1 rounded-md">{label}</span>))}</div>
+                <p className="text-sm text-zinc-300">{description}</p>
             </div>  
 
             <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">

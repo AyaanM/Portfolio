@@ -1,3 +1,5 @@
+/*WHEN GETTING IMAGES MAKE SURE TO CROP THEM TO IMAGE SIZE AND NOT INCLUDE ANY EXTRA PADDDING*/
+
 import ProjectCard from "./ProjectCard"
 
 const project = [
