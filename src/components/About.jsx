@@ -7,9 +7,9 @@ const About = () => {
         <div className="container flex items-center gap-15">
 
           <div className="about-pics">
-            <img src="Portfolio/self/UMaryland-talk.png" className="w-full rotate-[-6deg] rounded-[2vw] relative"/>
-            <img src="Portfolio/self/budgies.png" className="w-full rounded-xl -mt-10 ml-10 relative" />
-            <img src="Portfolio/self/golden_circle.png" className="w-full rounded-xl -mt-10" />
+            <img src="/Portfolio/self/UMaryland-talk.png" className="w-full rotate-[-6deg] rounded-[2vw] relative"/>
+            <img src="/Portfolio/self/budgies.png" className="w-full rounded-xl -mt-10 ml-10 relative" />
+            <img src="/Portfolio/self/golden_circle.png" className="w-full rounded-xl -mt-10" />
           </div>
 
           <div className="ring-2 mb-4 ring-cyan-400 rounded-2xl p-6 text-zinc-300 text-base md:text-lg max-w-xl text-center bg-slate-800 shadow-lg">
@@ -22,9 +22,9 @@ const About = () => {
           </div>
 
           <div className="about-pics">
-            <img src="Portfolio/self/talk.jpg" className="w-full -mb-10 z-2 ml-10 rounded-xl shadow-lg" />
-            <img src="Portfolio/self/trail-bike.jpg" className="w-full -mb-5 rounded-xl shadow-lg" />
-            <img src="Portfolio/self/washington.jpg" className="w-full rounded-xl rotate-9" />
+            <img src="/Portfolio/self/talk.jpg" className="w-full -mb-10 z-2 ml-10 rounded-xl shadow-lg" />
+            <img src="/Portfolio/self/trail-bike.jpg" className="w-full -mb-5 rounded-xl shadow-lg" />
+            <img src="/Portfolio/self/washington.jpg" className="w-full rounded-xl rotate-9" />
           </div>
 
         </div>
