@@ -9,7 +9,7 @@ const ProjectCard = ({
     description, 
     github, 
     mockup, 
-    documentation}) => {
+    docs}) => {
 
   return (
 
@@ -19,28 +19,28 @@ const ProjectCard = ({
             <img src={imgSrc} alt={title} className="p-2 max-w-full max-h-full"/> 
         </figure>
 
+        <div className="mb-2 space-y-3">
+            <h3 className="title-1">{title}</h3>
 
-        <div className="flex items-center justify-between gap-4">
-
-            <div>
-                <h3 className="title-1 mb-2">{title}</h3>
-
-                <div className="flex flex-wrap gap-2 mb-3">{techStack.map((label, key) => (
-                    <span key={key} className="bg-zinc-700 text-zinc-100 text-xs px-2 py-1 rounded-md">{label}</span>))}</div>
-                <p className="text-sm text-zinc-300">{description}</p>
-            </div>  
-
-            <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
-                <span className="material-symbols-outlined" aria-hidden="true">
-                    arrow_outward
-                </span>
+            <div className="flex flex-wrap gap-2">
+                {techStack.map((label, key) => (
+                <span key={key} className="bg-zinc-700 text-zinc-100 text-xs px-2 py-1 rounded-md">{label}</span>
+                ))}
             </div>
-
+            
+            <p className="text-sm text-zinc-300">{description}</p>
         </div>
 
-        <a href={github} traget="_blank" className="absolute inset-0"></a>
-        <a href={mockup} traget="_blank" className=""></a>
-        <a href={documentation} traget="_blank" className=""></a>
+        <script>
+
+        </script>
+        
+        {/* if lefthand side true (&& = AND) then return righthand side */}
+        <div className="flex gap-5 my-4">
+            {github && <a href={github} target="_blank" className="project-btn">GitHub</a>}
+            {mockup && <a href={mockup} target="_blank" className="project-btn">Mockup</a>}
+            {docs && <a href={docs} className="project-btn">Docs</a>}
+        </div>
 
     </div>
   )
@@ -53,7 +53,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     github: PropTypes.string,
     mockup: PropTypes.string,
-    documentation: PropTypes.string
+    docs: PropTypes.string
 }
 
 export default ProjectCard

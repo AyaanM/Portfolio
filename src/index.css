@@ -95,3 +95,12 @@ body {
 .about-pics img:hover {
   @apply scale-130 z-10
 }
+
+/* PROJECTS */
+.project-btn {
+  @apply px-4 py-2 ring-1 ring-cyan-400 text-cyan-400 rounded
+}
+
+.project-btn:hover {
+  @apply bg-cyan-400 text-white
+}
