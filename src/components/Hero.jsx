@@ -1,7 +1,30 @@
-import React from 'react'
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
-  return (
+    const typedRef = useRef();
+
+    useEffect(() => {
+      const typed = new Typed(typedRef.current, {
+        strings: [
+          "Computing Science + Business Student",
+          "Aspiring Data Scientist",
+          "Web Developer",
+          "Software Developer",
+          "UI/UX Designer",
+          "Freelancer",
+          "AI Consultant"
+        ],
+        typeSpeed: 25,
+        backSpeed: 25,
+        loop: true,
+      });
+  
+      return () => {
+        typed.destroy(); // Clean up the effect on unmount
+      };
+    }, []);
+
+    return (
     
     <section id="home" className="-mt-10">
         <div className="container md:grid md:grid-cols-2 items-center">
@@ -9,7 +32,7 @@ const Hero = () => {
             <div className="text-center tracking-wide">
                 <p className='text-md text-cyan-400 my-3'>Hello I'm</p>
                 <h1 className="headline-1 my-3">Ayaan Merchant</h1>
-                <p className="font-light my-3">Web Developer</p>
+                <p className="font-light my-3"><span ref={typedRef}></span></p>
 
                 <a href="#coffee" className="coffee-btn">
                     Let's Grab a Virtual Coffee
