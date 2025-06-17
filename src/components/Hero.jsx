@@ -3,8 +3,8 @@ import React from 'react'
 const Hero = () => {
   return (
     
-    <section id="home" className="">
-        <div className="container p-40 md:p-0 md:grid md:grid-cols-2 items-center">
+    <section id="home" className="-mt-10">
+        <div className="container md:grid md:grid-cols-2 items-center">
 
             <div className="text-center tracking-wide">
                 <p className='text-md text-cyan-400 my-3'>Hello I'm</p>
@@ -17,7 +17,7 @@ const Hero = () => {
                     
                 </a>
 
-                <div className="container flex gap-15 justify-center items-center my-3">
+                <div className="container flex gap-15 justify-center items-center">
                     <div className="socials"><a href="https://github.com/AyaanM" target="_blank"><img src="/Portfolio/github_logo_white.png" alt="GitHub"/></a></div>
                     <div className="socials"><a href="https://www.linkedin.com/in/ayaanm1/" target="_blank"><img src="/Portfolio/link_logo_white.png" className="w-full h-full object-contain" alt="LinkedIn"/></a></div>
                     <div className="socials"><a href="mailto:ayaan.merchant08@gmail.com" target="_blank"><span className="material-symbols-outlined" style={{fontSize: '35px'}}>mail</span></a></div>

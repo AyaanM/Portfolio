@@ -9,7 +9,7 @@ const Coffee = () => {
   }, []);
 
   return (
-    <section id="coffee" className="section text-center">
+    <section id="coffee" className="section text-center mb-5">
       <div className="container">
         <h1 className="headline-2 items-center">Let's Grab a Virtual Coffee</h1>
         <p className="title-1 text-zinc-300">

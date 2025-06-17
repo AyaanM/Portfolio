@@ -20,7 +20,7 @@ body {
 }
 
 .title-1 {
-  @apply text-lg font-semibold
+  @apply text-lg font-semibold mb-8
 }
 
 /* UTILITIES */
@@ -33,8 +33,8 @@ body {
   @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
 }
 
-.section {
-  @apply md:pt-20
+section {
+  @apply pt-8 md:pt-20
 }
 
 /* ---------------------- COMPONENTS --------------------------- */
@@ -95,6 +95,15 @@ body {
 .about-pics img:hover {
   @apply scale-130 z-10
 }
+
+.about-pics-mobile {
+  @apply md:hidden container items-center grid grid-cols-3
+}
+
+.about-pics-mobile img:hover {
+  @apply scale-130 z-10
+}
+
 
 /* PROJECTS */
 .project-btn {

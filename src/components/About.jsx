@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="section">
     
-        <div className="container flex items-center gap-15">
+        <div className="container md:flex items-center gap-15">
 
           <div className="about-pics">
             <img src="/Portfolio/self/UMaryland-talk.png" className="w-full rotate-[-6deg] rounded-[2vw] relative"/>
@@ -25,6 +25,13 @@ const About = () => {
             <img src="/Portfolio/self/talk.jpg" className="w-full -mb-10 z-2 ml-10 rounded-xl shadow-lg" />
             <img src="/Portfolio/self/trail-bike.jpg" className="w-full -mb-5 rounded-xl shadow-lg" />
             <img src="/Portfolio/self/washington.jpg" className="w-full rounded-xl rotate-9" />
+          </div>
+
+          {/* pics in mobile version */}
+          <div className="about-pics-mobile">
+            <img src="/Portfolio/self/UMaryland-talk.png" className="rotate-[-6deg] rounded-[2vw] -mr-20 z-1 relative"/>
+            <img src="/Portfolio/self/golden_circle.png" className="rounded-xl relative" />
+            <img src="/Portfolio/self/talk.jpg" className="rotate-[12deg] -ml-5 rounded-xl relative" />
           </div>
 
         </div>
