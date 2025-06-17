@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     
-    <section className="">
+    <section id="home" className="">
         <div className="container p-40 md:p-0 md:grid md:grid-cols-2 items-center">
 
             <div className="text-center tracking-wide">

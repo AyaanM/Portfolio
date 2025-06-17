@@ -24,21 +24,31 @@ const Navbar = ({navOpen, onClose}) => {
         initActiveBox();
         window.addEventListener('resize', initActiveBox);
 
-        const sections = document.querySelectorAll("section"); //get all sections
+        const sections = document.querySelectorAll("section");
 
-        const observer = new IntersectionObserver((entries) => { //observe where sections are and alter activebox
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log("You have scrolled to #" + entry.target.id);
+                    const id = entry.target.id;
+                    const navLink = document.querySelector(`.navlink[href="#${id}"]`);
+
+                    if (navLink) {
+                        lastActiveLink.current?.classList.remove('active');
+                        navLink.classList.add('active');
+                        lastActiveLink.current = navLink;
+
+                        activeBox.current.style.top = navLink.offsetTop + 'px';
+                        activeBox.current.style.left = navLink.offsetLeft + 'px';
+                        activeBox.current.style.width = navLink.offsetWidth + 'px';
+                        activeBox.current.style.height = navLink.offsetHeight + 'px';
+                    }
                 }
             });
         }, {
-            threshold: 0.5, //only activates when 50% of after id is reached
+            threshold: 0.5,
         });
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
+        sections.forEach(section => observer.observe(section));
 
         return () => {
             window.removeEventListener('resize', initActiveBox);
@@ -58,18 +68,6 @@ const Navbar = ({navOpen, onClose}) => {
 
         onClose();
     }
-
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            entry.target.classList.toggle(console.log("You have scrolled to" + entry.target.id), entry.isIntersecting)
-        })
-    });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
 
     return (
         <nav className={'navbar ' + (navOpen ? 'active' : '')}> 

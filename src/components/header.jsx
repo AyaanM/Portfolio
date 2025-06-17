@@ -12,7 +12,7 @@ const Header = () => {
       <header className="w-full h-20 flex z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
         <div className="w-full px-4 flex justify-between items-center">
 
-          <h1 id="home" className="logo">
+          <h1 className="logo">
             <a href="/Portfolio">
             <img src="/Portfolio/logo.png" width={80} height={90} alt="AM" />
             </a>
