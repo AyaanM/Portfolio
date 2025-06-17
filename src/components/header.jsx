@@ -2,7 +2,7 @@
 import {useState} from "react";
 
 /** Components */
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 
 
 const Header = () => {
