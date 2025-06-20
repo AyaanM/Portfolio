@@ -37,14 +37,14 @@ const Hero = () => {
                 <a href="#coffee" className="coffee-btn">
                     Let's Grab a Virtual Coffee
                     <span className="material-symbols-outlined animate-bounce">local_cafe</span>
-                    
                 </a>
 
-                <div className="container flex gap-15 justify-center items-center">
+                <div className="flex gap-15 my-3 justify-center align-middle">
                     <div className="socials"><a href="https://github.com/AyaanM" target="_blank"><img src="/Portfolio/github_logo_white.png" alt="GitHub"/></a></div>
-                    <div className="socials"><a href="https://www.linkedin.com/in/ayaanm1/" target="_blank"><img src="/Portfolio/link_logo_white.png" className="w-full h-full object-contain" alt="LinkedIn"/></a></div>
-                    <div className="socials"><a href="mailto:ayaan.merchant08@gmail.com" target="_blank"><span className="material-symbols-outlined" style={{fontSize: '35px'}}>mail</span></a></div>
+                    <div className="socials"><a href="https://www.linkedin.com/in/ayaanm1/" target="_blank"><img src="/Portfolio/link_logo_white.png" className="h-full object-contain" alt="LinkedIn"/></a></div>
+                    <div className="socials scale-120"><a href="mailto:ayaan.merchant08@gmail.com" target="_blank"><img src="/Portfolio/mail.png" alt="Email Me"/></a></div>
                 </div>
+
             </div>
 
             <figure className="hidden md:block w-full max-w-[480px] ml-auto bg-gradient-to-t from-cyan-400 via-45% via-cyan-700 to-70% rounded-[30px] overflow-hidden">

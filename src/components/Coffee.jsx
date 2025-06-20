@@ -13,7 +13,7 @@ const Coffee = () => {
       <div className="container">
         <h1 className="headline-2 items-center">Let's Grab a Virtual Coffee</h1>
         <p className="title-1 text-zinc-300">
-          I love meeting new people. If there’s a project you’d like to discuss or want to talk about your own innovations, book a time below.
+          I love meeting new people. If there’s a project you’d like to discuss or want to talk about your own innovations, book a time below
         </p>
 
         {/* Calendly booking widget */}

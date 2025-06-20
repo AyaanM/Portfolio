@@ -71,7 +71,7 @@ section {
 
 /* HERO */
 .coffee-btn {
-  @apply inline-block px-6 py-3 my-3 ring-1 ring-cyan-400 text-cyan-400 rounded
+  @apply inline-flex px-6 py-3 my-3 gap-1 ring-1 ring-cyan-400 text-cyan-400 rounded;
 }
 
 .coffee-btn:hover {

@@ -14,9 +14,9 @@ const About = () => {
 
           <div className="ring-2 mb-4 ring-cyan-400 rounded-2xl p-6 text-zinc-300 text-base md:text-lg max-w-xl text-center bg-slate-800 shadow-lg">
             <h1 className="headline-2">Who am I?</h1>
-            <p className="mb-4">Hi, I’m Ayaan Merchant! A Computing Science and Business Student at University of Alberta.</p>
-            <p className="mb-4">I’m an aspiring data scientist who has worked extensively in data analysis and business optimization. I also love public speaking and building, having co-founded The Business Club and Gaia, a JA Company, which won JA Canada Company of the Year!</p>
-            <p className="mb-4">I’ve done much freelance work, including website development, UI/UX, and business and AI consulting.</p>
+            <p className="mb-4">Hi, I’m Ayaan Merchant! A Computing Science and Business Student at the University of Alberta.</p>
+            <p className="mb-4">I’m an aspiring data scientist who has worked in data analysis and business optimization. I also love public speaking and building, having co-founded The Business Club and Gaia, a JA Company, which won JA Canada Company of the Year!</p>
+            <p className="mb-4">I’ve done much freelance work, including website development, UI/UX, and AI consulting.</p>
             <p className="mb-4">Living intentionally, I’ve kept close with my passions. Experimenting with music production, boxing, hiking, biking (my PR is 90km), and working out are a part of who I am. I also share my house with 7 budgies.</p>
             <p>Continue scrolling to see some of the projects I've worked on, including websites and mockups. Give me a shout if you want to geek out about any of them.</p>
           </div>
