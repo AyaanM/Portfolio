@@ -39,11 +39,12 @@ const Hero = () => {
                     <span className="material-symbols-outlined animate-bounce">local_cafe</span>
                 </a>
 
-                <div className="flex gap-15 my-3 justify-center align-middle">
+                <div className="flex justify-center items-end gap-12 my-3">
                     <div className="socials"><a href="https://github.com/AyaanM" target="_blank"><img src="/Portfolio/github_logo_white.png" alt="GitHub"/></a></div>
-                    <div className="socials"><a href="https://www.linkedin.com/in/ayaanm1/" target="_blank"><img src="/Portfolio/link_logo_white.png" className="h-full object-contain" alt="LinkedIn"/></a></div>
+                    <div className="socials"><a href="https://www.linkedin.com/in/ayaanm1/" target="_blank"><img src="/Portfolio/link_logo_white.png" alt="LinkedIn"/></a></div>
                     <div className="socials scale-120"><a href="mailto:ayaan.merchant08@gmail.com" target="_blank"><img src="/Portfolio/mail.png" alt="Email Me"/></a></div>
                 </div>
+                
 
             </div>
 
