@@ -1,12 +1,15 @@
-# React + Vite
+# My Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+For this project I used Vite + React, as that was what I wanted to learn. This project was set up and deployed using npm. TailWindCSS was also used to create all the animations and make life easier. The only library I used here was Typed JS, for the automatic typing. Google fonts were also used, for some of the fonts as well as the 'local cafe' symbol. The Github and linkedIn logo's were downloaded from their respective websites, just do an internet search if you want these yourself.
 
-Currently, two official plugins are available:
+While this took a little while, I'm glad to have made it. Reading through the code, you might think I reinvented the wheel, something that's usually quite unnessesary. And yes, while I did reinvent the wheel, my aim was to develop a web app, while learning ReactJS. While a dynamic application using React seems like overkill for a personal portfolio, I got to learn alot which I didn't know before. This includes creating and deploying a project. Using npm to deploy to github pages. Various javascript functions and API's including the intersection observer, prop types, and much more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I don't exactly think vibe coding would allow me to learn as much as I could if I coded things myself, spending lots of time to understand what I'm doing. Vibe coding would've made this alot easier, I would've been able to create this website in a few hours rather than a few weeks, but then there's no real learning coming out of that, at least learning that would stick with me. It's also not very fun. Therefore, I didn't vibe code. That being said, ChatGpt 4.0 and 3.5 was used to explain some of the stuff that I was doing, I found this faster than an internet search. For example, one of my prompts were 'explain intersection observer.' Furthermore, each time ChatGpt spat out code, I made sure to clearly review it and understand, before implementing, and even then, I would use it with a grain of salt. 
 
-## Expanding the ESLint configuration
+My process was first creating a mockup using figma. This can be viewed here[https://www.figma.com/design/G4fqd68LXQRlY2RTk7836w/Personal-Portfolio-Website-Template--Community-?node-id=1-23&t=OdznlZzLMM2dpqjt-1]. From there I started by watching a Youtube Video to learn how to use React + Vite. I designed the architecture by first setting up TailWindCSS 4.0 (which caused a crazy ton of issues since it's a newer version which VSCode perhaps doesn't realize). Next, I set up my git ignores, the app jsx, main jsx, main css, and the main html files. Once that was all done I started creating my components which would be imported in app jsx. First the navbar and header was created, followed by the hero section. Rather than jumping around with files and components, I went in a very linear fashion, as that's what made the most sense to me and how I work, as in, I wouldn't touch about till the hero section was complete. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Throughout this project I learned alot, a crazy ton, much more than I knew before. Now I not only am more knolwedgable about web development, I feel more confident in my abilities to develop a web app without needing a great amount of external help. I also have a personal portfolio which seems really cool. 
+
+If you'd like to geek out about the specifics, of the chat, please reach out. You can do that on this website yourself by messaging me or booking a coffee chat.
+
+
